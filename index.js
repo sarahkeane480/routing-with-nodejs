@@ -16,10 +16,7 @@ http.createServer(function (req, res) {
     default: // Random paths you shouldn't go to!!
       // The classic 404 message we all know and love!
       res.writeHead(404, { "Content-Type": "text/plain" });
-      res.end("ERROR !! Not found");
-      // break;
+      res.end("Not found! OOPS!");
   }
 
-  // res.writeHead(200, { 'Content-Type': 'text/plain' });
-  // res.end('Aloha world');
 }).listen(process.env.PORT || 3000);
